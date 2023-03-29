@@ -1,0 +1,211 @@
+:root {
+
+    --primary: #b6895b;
+    --bg: #010101;
+
+
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: 0;
+
+}
+
+
+body {
+    
+    margin: 0;
+    
+    padding: 0;
+    
+    box-sizing: border-box;
+    
+    outline: none;
+    
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg); 
+    color: #fff;
+
+
+}
+
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1,4rem 7%;
+    background-color: rgba(1, 1, 1, 0,8);
+    border-bottom: 1px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+}
+
+.navbar .navbar-logo{
+font-size: 2rem;
+font-weight: 700;
+color:#400e8f;
+
+
+}
+
+.navbar .navbar-logo{
+    color: var(--primary);
+
+}
+.navbar .navbar-nav a{
+    color:#fff;
+    display: inline-block;
+    font-size: 1,4rem;
+    margin: 0 1rem;
+
+
+}
+
+.navbar .navbar-nav a:hover {
+color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+    display: block;
+    padding-bottom: 0,5rem;
+    border-bottom: 0,1rem solid var(--primary);
+    transform: scalex(0);
+    transition: 0,2s linear;
+
+}
+.navbar navbar-nav a:hover:: after {
+ transform: scalex(0,5)
+}
+
+
+.navbar .navbar-extra a{
+    color: #ffff;
+    margin: 0,5rem;
+}
+
+
+body{
+background-color: #123122;
+margin: 0;
+color:#fff
+}
+a{
+    text-decoration: none;
+    color:blue;
+    font-size:1.5em;
+    font-weight: 700;
+}
+img { 
+    width:150px;
+}
+header {
+    background:#FFFFFF;
+    padding: 1em;
+}
+
+.container {
+    padding: 7em 1em;
+}
+
+
+footer {
+    background:#030741;
+}
+
+ul {
+    margin:0;padding:0;
+}
+ul li {
+    padding: 2em;
+    color:#f1c269;
+}
+ul li span {
+    display:block;
+    font-size:1.4em;
+    margin-bottom:1em;
+    color: white;
+}
+
+
+.image-list .image__file {
+    order: -1;
+    margin-bottom: 1.25rem;
+    border-radius: 50%;
+  }
+
+  .image-list .image__headline {
+    margin-bottom: .625rem;
+    color: #003da5;
+    font-weight: 600;
+  }
+  img {
+    border-style: none;
+  }
+  img {
+    vertical-align: middle;
+    border-style: none;
+  }
+  *, ::after, ::before {
+    margin: 0;
+      margin-bottom: 0px;
+    padding: 0;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+  } 
+  
+  
+  
+  
+  .formatted-text {
+        width: 100%;
+        max-width: 52rem;
+        margin-right: auto;
+        margin-left: auto;
+  }
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display:flex;
+    align-items: center;
+    
+
+}
+
+
+/* Media Quaries */
+
+/* Laptop */
+@media (max-widht: 136px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+/* Tablet */
+@media (max-widht: 758px) {
+    html {
+        font-size: 62,5%;
+    }
+
+/* Mobile phone */
+@media (max-widht: 450px) {
+    html {
+        font-size: 55%;
+    }
